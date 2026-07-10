@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧩 매일매일 두뇌 트레이닝 퀴즈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header-row">
+        <h1>🧩 매일매일 두뇌 퀴즈</h1>
+        <button id="bgm-btn" onclick="toggleBGM()">🎵 BGM 켜기</button>
+    </div>
+    
+    <!-- 달력 기능 -->
+    <div class="calendar-box" id="today-date">📅 날짜 로딩 중...</div>
+    
+    <!-- 목숨 표시 구역 -->
+    <div class="lives-box" id="lives-display">남은 기회: ❤️❤️❤️</div>
+    
+    <!-- 오늘의 퀴즈 구역 -->
+    <div class="quiz-box" id="quiz-question">문제를 불러오는 중입니다...</div>
+    
+    <!-- 정답 입력창 -->
+    <input type="text" id="user-answer" placeholder="정답을 입력하세요!">
+    <br>
+    <button id="submit-btn" onclick="checkAnswer()">정답 제출하기 🚀</button>
+    
+    <hr style="margin: 25px 0; border: 0; border-top: 1px solid #eee;">
+    
+    <!-- 딱 한 번만 쓸 수 있는 반전 힌트 버튼 -->
+    <h3>💡 힌트는 딱 한 번만! 신중하게 고르세요!</h3>
+    <button id="hint-btn-old" class="hint-btn-old" onclick="useHint('old')">📜 옛날 힌트 보기</button>
+    <button id="hint-btn-new" class="hint-btn-new" onclick="useHint('new')">⚡ 최신 힌트 보기</button>
+    
+    <div id="hint-old" class="hint-text"></div>
+    <div id="hint-new" class="hint-text"></div>
+    
+    <!-- 결과 창 -->
+    <div id="result-area" class="result-box">
+        <p class="score" id="result-message"></p>
+        <p id="result-sub-message">🎉 오늘 출석 체크 완료! 내일 새로운 문제로 또 만나요!</p>
+        <button id="share-btn" onclick="shareResult()" style="background: #fbc02d; color: black;">내 결과 링크 복사하기 🔗</button>
+    </div>
+</div>
+
+<!-- 오디오 엘리먼트 (신나는 Royalty-Free 루프 배경음악) -->
+<audio id="bgm" loop src="https://assets.mixkit.co/active_storage/sfx/123/123.wav"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

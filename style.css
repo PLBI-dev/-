@@ -1,0 +1,109 @@
+body {
+    font-family: 'Malgun Gothic', sans-serif;
+    background-color: #f0f2f5;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+h1 {
+    color: #4a90e2;
+    margin: 0;
+}
+#bgm-btn {
+    background: #7e57c2;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+#bgm-btn.playing {
+    background: #e53935;
+}
+.calendar-box {
+    background: #eef5fc;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+.lives-box {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ff4a5a;
+    letter-spacing: 5px;
+}
+.quiz-box {
+    font-size: 1.3rem;
+    margin: 20px 0;
+    font-weight: bold;
+    background: #fffde7;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #ffd54f;
+    white-space: pre-line;
+}
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 5px;
+}
+button:hover {
+    background: #357abd;
+}
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+.hint-btn-old { background: #ff8a80; }
+.hint-btn-old:hover { background: #e57373; }
+.hint-btn-new { background: #b2dfdb; color: #004d40; }
+.hint-btn-new:hover { background: #80cbc4; }
+
+.hint-text {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: none;
+    font-size: 0.95rem;
+}
+.result-box {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #e8f5e9;
+    border-radius: 10px;
+    border: 2px solid #81c784;
+}
+.score {
+    font-size: 1.5rem;
+    color: #2e7d32;
+    font-weight: bold;
+}
